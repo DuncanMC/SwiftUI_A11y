@@ -11,6 +11,7 @@
 		AE95766E2CB5B219003FFDFC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE95766D2CB5B219003FFDFC /* ContentView.swift */; };
 		AE9576702CB5B21A003FFDFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE95766F2CB5B21A003FFDFC /* Assets.xcassets */; };
 		AE9576732CB5B21A003FFDFC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE9576722CB5B21A003FFDFC /* Preview Assets.xcassets */; };
+		AEC5B0B02CB5B2540050F5B6 /* ProductDetailsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC5B0AF2CB5B2540050F5B6 /* ProductDetailsHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		AE95766D2CB5B219003FFDFC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AE95766F2CB5B21A003FFDFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE9576722CB5B21A003FFDFC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AEC5B0AF2CB5B2540050F5B6 /* ProductDetailsHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetailsHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				AE95766B2CB5B219003FFDFC /* SwiftUI_A11yApp.swift */,
 				AE95766D2CB5B219003FFDFC /* ContentView.swift */,
+				AEC5B0AF2CB5B2540050F5B6 /* ProductDetailsHeaderView.swift */,
 				AE95766F2CB5B21A003FFDFC /* Assets.xcassets */,
 				AE9576712CB5B21A003FFDFC /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEC5B0B02CB5B2540050F5B6 /* ProductDetailsHeaderView.swift in Sources */,
 				AE95766E2CB5B219003FFDFC /* ContentView.swift in Sources */,
 				AE95766C2CB5B219003FFDFC /* SwiftUI_A11yApp.swift in Sources */,
 			);
