@@ -7,6 +7,16 @@
 
 import SwiftUI
 
+enum CurrentA11yFocus: Int, Hashable, CaseIterable {
+    case button
+    case field1
+    case field2
+    case field3
+    static func randomElement() -> AllCases.Element {
+        return Self.allCases.randomElement()!
+    }
+}
+
 struct ContentView: View {
     @EnvironmentObject var appObject: AppObject
     @AccessibilityFocusState var currentA11yFocus: CurrentA11yFocus?
@@ -16,11 +26,10 @@ struct ContentView: View {
     @State var string2: String = "String 2"
     @State var string3: String = "String 3"
     var focusString: String {
+        print("At line \(#line)")
+        print("appObject = \(Unmanaged.passUnretained(appObject).toOpaque()))")
+
         return currentA11yFocus.map { String(describing:$0) } ?? "NIL"
-    }
-    
-    func focusString(for a11yFocus: CurrentA11yFocus?) -> String {
-        a11yFocus.map {  String(describing: $0) } ?? "NIL"
     }
     
     var array = Array(1...5)
@@ -42,8 +51,8 @@ struct ContentView: View {
                 //
                 if currentA11yFocus == nil {
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.05){
-                        currentA11yFocus = .field1
-                        print("currentA11yFocus set to \(focusString)")
+                        currentA11yFocus = CurrentA11yFocus.randomElement()
+                        print("In button handler. currentA11yFocus set to \(focusString)")
                     }
                 } else{
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.05){

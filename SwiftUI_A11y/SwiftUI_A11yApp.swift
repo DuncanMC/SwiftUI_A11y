@@ -7,15 +7,6 @@
 
 import SwiftUI
 
-enum CurrentA11yFocus: Int, Hashable, CaseIterable {
-    case button
-    case field1
-    case field2
-    case field3
-    static func randomElement() -> AllCases.Element {
-        return Self.allCases.randomElement()!
-    }
-}
 
 class AppObject: ObservableObject, Equatable {
     @Published var message: String = ""
